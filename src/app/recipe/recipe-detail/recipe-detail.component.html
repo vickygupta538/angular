@@ -1,0 +1,11 @@
+<div *ngIf="recipe">
+  <div>{{ recipe.id }}</div>
+  <div>{{ recipe.name }}</div>
+  <div>{{ recipe.desc }}</div>
+  <div *ngFor="let ingredient of recipe.ingredients">
+    {{ ingredient.name }} - {{ ingredient.amount }}
+  </div>
+  <button (click)="sendToShoppingList(recipe.ingredients)">
+    Send to Shopping List
+  </button>
+</div>

@@ -1,0 +1,14 @@
+.recipe {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.recipe .recipe-list {
+  flex-basis: 30%;
+  border-right: 1px solid lightgrey;
+}
+
+.recipe .recipe-detail {
+  flex-basis: 70%;
+}

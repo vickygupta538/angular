@@ -1,0 +1,8 @@
+<div
+  *ngFor="let recipe of recipes; let i = index"
+  (click)="selectedRecipe(recipe)"
+>
+  <div>{{ recipe.name }}</div>
+  <div>{{ recipe.desc }}</div>
+  <hr />
+</div>

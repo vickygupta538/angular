@@ -1,0 +1,16 @@
+<p>shoping-item works!</p>
+<form
+  #ingredientForm="ngForm"
+  (ngSubmit)="addIngredient(ingredientForm.value); ingredientForm.reset()"
+>
+  <div>
+    <input type="text" name="name" [ngModel]="ingredient.name" required />
+  </div>
+
+  <div>
+    <input type="number" name="amount" [ngModel]="ingredient.amount" required />
+  </div>
+  <div>
+    <input type="submit" [disabled]="ingredientForm.invalid" />
+  </div>
+</form>
